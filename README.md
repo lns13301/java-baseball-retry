@@ -9,5 +9,10 @@
 
 ## 기능 구현
 1. Calculator
-    - Random 번호를 개수를 입력받아 List 로 반환하는 기능
+    - Random 으로 번호를 뽑아내어 List 로 반환하는 기능
     
+2. User
+    - 번호를 3자리 입력 받음
+    
+3. Computer
+    - 생성 시 랜덤 3개의 번호를 저장
