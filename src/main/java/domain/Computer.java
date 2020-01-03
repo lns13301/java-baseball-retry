@@ -9,4 +9,8 @@ public class Computer {
     public Computer() {
         this.numbers = calculator.getRandomNumbers();
     }
+
+    public int countBall(List<Integer> numbers) {
+        return (int) this.numbers.stream().filter(numbers::contains).count();
+    }
 }
