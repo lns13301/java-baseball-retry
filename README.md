@@ -11,8 +11,5 @@
 1. Calculator
     - Random 으로 번호를 뽑아내어 List 로 반환하는 기능
     
-2. User
-    - 번호를 3자리 입력 받음
-    
-3. Computer
+2. Computer
     - 생성 시 랜덤 3개의 번호를 저장
