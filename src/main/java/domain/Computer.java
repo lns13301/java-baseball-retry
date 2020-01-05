@@ -12,8 +12,8 @@ public class Computer {
         this.numbers = calculator.getRandomNumbers();
     }
 
-    public int countBall(List<Integer> numbers) {
-        return (int) this.numbers.stream().filter(numbers::contains).count();
+    public int countBall(List<Integer> numbers, int strikeCount) {
+        return (int) this.numbers.stream().filter(numbers::contains).count() - strikeCount;
     }
 
     public int countStrike(List<Integer> numbers) {
