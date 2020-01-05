@@ -6,7 +6,7 @@ import view.OutputView;
 import java.util.List;
 
 public class GameManager {
-    private static final int CONTINUE = 2;
+    private static final int CONTINUE = 1;
     private static final int WIN = 3;
 
     public static void menu() {

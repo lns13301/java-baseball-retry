@@ -13,5 +13,6 @@ public class OutputView {
         if (ball == EMPTY && strike == EMPTY) {
             System.out.print("낫싱");
         }
+        System.out.println();
     }
 }
