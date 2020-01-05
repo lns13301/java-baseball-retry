@@ -1,6 +1,7 @@
 package domain;
 
 import view.InputView;
+import view.OutputView;
 
 import java.util.List;
 
@@ -9,9 +10,13 @@ public class GameManager {
 
     public void play() {
         List<Integer> numbers;
+        int strike;
+
         Computer computer = new Computer();
         do {
             numbers = InputView.InputNumbers();
-        } while (computer.countStrike(numbers) == WIN);
+            strike  = computer.countStrike(numbers);
+            OutputView.showResult(strike, computer.countBall(numbers, strike));
+        } while (strike == WIN);
     }
 }
