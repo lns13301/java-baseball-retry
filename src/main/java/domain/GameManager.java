@@ -26,6 +26,6 @@ public class GameManager {
             numbers = InputView.inputNumbers();
             strike  = computer.countStrike(numbers);
             OutputView.showResult(strike, computer.countBall(numbers, strike));
-        } while (strike == WIN);
+        } while (strike != WIN);
     }
 }

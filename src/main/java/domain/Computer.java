@@ -17,10 +17,9 @@ public class Computer {
     }
 
     public int countStrike(List<Integer> numbers) {
-        return IntStream
-                .range(START, numbers.size()).filter(idx -> this.numbers.get(idx)
-                .equals(numbers.get(idx)))
-                .findFirst()
-                .orElse(numbers.size());
+        return (int) IntStream
+                .range(START, 3)
+                .filter(idx -> this.numbers.get(idx).equals(numbers.get(idx)))
+                .count();
     }
 }

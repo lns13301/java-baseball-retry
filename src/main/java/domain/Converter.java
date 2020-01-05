@@ -9,6 +9,9 @@ public class Converter {
     private static final int FIRST = 0;
 
     public static List<Integer> convertStringToIntegerList(String value) {
-        return Arrays.stream(value.split(EMPTY)).mapToInt(x -> x.charAt(FIRST)).boxed().collect(Collectors.toList());
+        return Arrays.stream(value.split(EMPTY))
+                .mapToInt(Integer::parseInt)
+                .boxed()
+                .collect(Collectors.toList());
     }
 }
