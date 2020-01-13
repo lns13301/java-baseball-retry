@@ -1,9 +1,7 @@
 package view;
 
-import com.sun.corba.se.impl.io.TypeMismatchException;
 import domain.Converter;
 
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -15,11 +13,11 @@ public class InputView {
         String value = scanner.nextLine();
 
         try {
-            Integer.parseInt(value);
-           return Converter.convertStringToIntegerList(value);
+            return Validator.isNumberLimitCorrect(Converter.convertStringToIntegerList(value));
         } catch (NumberFormatException e) {
-            System.out.println("정수형 숫자가 아닙니다.");
+            System.out.println("3자리의 올바른 숫자가 아닙니다.");
         }
+
         return inputNumbers();
     }
 
