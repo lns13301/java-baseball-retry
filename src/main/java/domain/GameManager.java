@@ -11,6 +11,7 @@ public class GameManager {
 
     public static void menu() {
         play();
+        OutputView.showEnd();
 
         if (InputView.inputMenu() == CONTINUE) {
             menu();
