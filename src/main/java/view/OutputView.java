@@ -1,5 +1,7 @@
 package view;
 
+import domain.GameManager;
+
 public class OutputView {
     private static final int EMPTY = 0;
 
@@ -17,6 +19,7 @@ public class OutputView {
     }
 
     public static void showEnd() {
-        System.out.println("3개의 숫자를 모두 맞히셨습니다! 게임종료");
+        System.out.println("3개의 숫자를 모두 맞히셨습니다! " +
+                "게임종료 (도전 횟수 : " + GameManager.getTryTimes() + "회)");
     }
 }
